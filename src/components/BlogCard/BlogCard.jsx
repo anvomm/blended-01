@@ -1,3 +1,5 @@
+import { formatArticleDate } from 'service/formatdate';
+
 import {
   Card,
   CardHeader,
@@ -32,7 +34,7 @@ export const BlogCard = ({
           <Avatar src={avatar} alt={name} />
           <UserInfo>
             <UserName>{name}</UserName>
-            <Date>{postedAt}</Date>
+            <Date>{formatArticleDate(postedAt)}</Date>
           </UserInfo>
         </UserBox>
       </CardFooter>
