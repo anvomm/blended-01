@@ -8,6 +8,8 @@ import {
   CryptoHistory,
 } from 'components';
 
+import forbes from '../../data/forbes.json';
+
 import data from '../../data/data.json'
 
 import article from '../../data/article.json';
@@ -29,7 +31,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList />
+        <ForbesList forbes={forbes}/>
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
