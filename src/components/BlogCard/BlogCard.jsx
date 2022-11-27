@@ -1,4 +1,5 @@
 import { formatArticleDate } from 'service/formatdate';
+import PropTypes from 'prop-types';
 
 import {
   Card,
@@ -40,4 +41,16 @@ export const BlogCard = ({
       </CardFooter>
     </Card>
   );
+};
+
+BlogCard.propTypes = {
+  data: PropTypes.shape({
+    poster: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    postedAt: PropTypes.string.isRequired,
+  }).isRequired,
 };
